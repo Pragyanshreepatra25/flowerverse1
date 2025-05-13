@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloraVerse - Flowers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FloraVerse</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flowers.html" class="active">Flowers</a></li>
+                <li><a href="favorites.html">My Favorites</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <h1>Explore Our Flower Collection</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for flowers...">
+                <button id="search-button">Search</button>
+            </div>
+            <button id="add-flower-button" class="cta-button">Add New Flower</button>
+        </section>
+
+        <section id="flowers-grid">
+            <!-- Flower cards will be dynamically added here -->
+        </section>
+
+        <section id="add-flower" class="modal">
+            <div class="modal-content">
+                <h2>Add New Flower</h2>
+                <form id="add-flower-form">
+                    <input type="text" id="flower-name" placeholder="Flower Name" required>
+                    <input type="text" id="scientific-name" placeholder="Scientific Name" required>
+                    <textarea id="description" placeholder="Description" required></textarea>
+                    <input type="text" id="image-url" placeholder="Image URL" required>
+                    <input type="text" id="season" placeholder="Blooming Season" required>
+                    <button type="submit">Add Flower</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FloraVerse. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
